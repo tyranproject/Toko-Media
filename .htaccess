@@ -1,0 +1,10 @@
+# Marketplace Bekasi Utara — proteksi root
+# Blokir akses langsung ke config.php dan seluruh folder app/.
+<FilesMatch "^(config\.php)$">
+    Require all denied
+</FilesMatch>
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^app/ - [F,L]
+</IfModule>
+# Bila server tidak memakai mod_rewrite, app/.htaccess tetap memblokir app/.
