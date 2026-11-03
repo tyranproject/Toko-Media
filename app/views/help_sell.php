@@ -1,0 +1,14 @@
+<p class="neo-eyebrow mb-1">Bantuan</p>
+<h1 class="text-3xl font-black mb-2">Cara Jualan</h1>
+<div class="neo-card p-5 space-y-4 text-sm font-medium">
+<p><strong>1. Satu akun untuk beli dan jual.</strong> Tidak ada peran penjual terpisah — akun yang sama bisa membeli dan menjual, dengan satu saldo dompet untuk keduanya.</p>
+<p><strong>2. Buat produk dari Produk Saya.</strong> Isi judul, deskripsi, spesifikasi, kelebihan, kekurangan, alasan dijual, harga, dan foto. Produk fisik wajib mengisi stok (angka ≥ 0) dan bisa menandai COD tersedia / pickup tersedia. Produk digital wajib mengunggah file digital — produk digital tanpa file tidak bisa disetujui admin.</p>
+<p><strong>3. Moderasi admin.</strong> Produk baru berstatus menunggu moderasi. Admin memeriksa satu per satu; produk aktif hanya setelah disetujui. Mengedit produk aktif mengembalikannya ke moderasi. Produk yang ditolak menampilkan alasan penolakan di Produk Saya.</p>
+<p><strong>4. Barang terlarang otomatis ditolak.</strong> Produk dewasa, alkohol, rokok, narkoba, judi, dan senjata otomatis ditolak dan tidak bisa masuk katalog. Admin juga memindai listing aktif secara berkala.</p>
+<p><strong>5. Kapan dana cair.</strong> Order fisik berbayar (dompet/QRIS) ditahan escrow: cair saat pembeli konfirmasi terima atau auto-release 3 hari tanpa komplain. Yang Anda terima = subtotal − fee platform 10% + Rp 5.000 ongkos antar bila COD (pickup tanpa ongkos antar; COD diantar penjual ke tempat pembeli). Order digital tidak pakai escrow: fee diselesaikan saat order selesai, Anda langsung dikredit subtotal − fee 10%.</p>
+<p><strong>6. Order tunai dan fee.</strong> Order tunai tidak punya escrow. Setelah Anda menandai tunai diterima dan pembeli konfirmasi (atau auto-complete 3 hari), fee platform 10% dipotong dari dompet Anda. Bila saldo belum cukup, order DITAHAN (status Menunggu fee penjual) sampai Anda top up — tidak ada lagi utang fee. Setelah top up, selesaikan dari halaman order atau tunggu cron per jam.</p>
+<p><strong>7. Penarikan.</strong> Minimal Rp 20.000, tidak melebihi saldo. Pengajuan langsung mendebit saldo Anda (status menunggu); admin mentransfer manual lalu menandai selesai + nomor referensi transfer. Penolakan mengkredit kembali saldo Anda.</p>
+<p><strong>8. Komplain pembeli.</strong> Pembeli bisa membuka komplain sebagai ganti konfirmasi terima. Order dibekukan selama komplain; admin yang memutuskan (refund / sebagian / lepas ke penjual / tolak). Untuk order tunai, keputusan admin hanya dicatat — penyelesaian uang dilakukan manual di luar sistem.</p>
+<p><strong>9. Tombol WhatsApp.</strong> Atur nomor WhatsApp dari menu WhatsApp supaya tombol "Hubungi penjual via WhatsApp" tampil di produk Anda. WhatsApp hanya untuk tanya-jawab; transaksi tetap lewat aplikasi supaya escrow dan komplain tetap berlaku.</p>
+<p><a class="underline decoration-[3px] font-bold" href="<?= url('help') ?>">← Kembali ke Bantuan</a></p>
+</div>
