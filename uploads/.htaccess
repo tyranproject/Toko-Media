@@ -1,1 +1,14 @@
-
+# Uploads: gambar hanya boleh dibaca, TIDAK BOLEH dieksekusi sebagai PHP.
+# PENTING: tanpa baris php_flag. Direktif php_flag hanya berlaku bila PHP
+# berjalan sebagai modul Apache (mod_php). Di hosting ini PHP berjalan
+# sebagai CGI (PHP Selector), sehingga php_flag adalah direktif tak dikenal
+# dan Apache menjawab ERROR 500 untuk SETIAP request di bawah /uploads/ —
+# akibatnya semua gambar produk di katalog dan halaman produk rusak,
+# padahal upload-nya sendiri berhasil dan file-nya tersimpan dengan benar.
+# Perlindungan eksekusi di bawah ini memakai direktif inti Apache saja,
+# sehingga aman di mod_php maupun CGI/FPM.
+RemoveHandler .php .phtml
+RemoveType .php .phtml
+<FilesMatch "\.(php|phtml|phar|cgi|pl|py)$">
+    Require all denied
+</FilesMatch>
