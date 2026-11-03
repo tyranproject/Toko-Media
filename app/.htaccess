@@ -1,0 +1,2 @@
+# Blokir semua akses web ke folder app/ (kode + contoh config).
+Require all denied
